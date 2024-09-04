@@ -41,6 +41,8 @@ axios(config)
     // axios.get(url);
     // console.log(lastCheckinTime,checkin_last_time,lastCheckinMoney,checkin_days_count)
 
+    var res= response.data.data.attributes;
+    var {lastCheckinTime,checkin_last_time,lastCheckinMoney,checkin_days_count}=res
     var content=`签到时间：${checkin_last_time}，签到能量：${lastCheckinMoney}。累计签到：${checkin_days_count}天`
     
   await notify.sendNotify(content)
