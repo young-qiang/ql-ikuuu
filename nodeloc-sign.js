@@ -5,6 +5,7 @@ var data = '{"data":{"type":"users","attributes":{"allowCheckin":false,"checkin_
 
 const checkinURL="https://www.nodeloc.com/api/users/3735";
 const cookie = process.env.NodelocCookie;
+const token = process.env.NodelocToken;
 
 
 
@@ -20,7 +21,7 @@ var config = {
       'sec-ch-ua-full-version-list': '"Chromium";v="128.0.6613.86", "Not;A=Brand";v="24.0.0.0", "Google Chrome";v="128.0.6613.86"', 
       'sec-ch-ua-model': '""', 
       'sec-ch-ua-platform-version': '"10.0.0"', 
-      'x-csrf-token': 'yREJAwjJQGifNMEP3pt1UIMfKDbEiwI8EtBeex8z', 
+      'x-csrf-token': token, 
       'x-http-method-override': 'PATCH', 
       'Cookie': cookie, 
       'User-Agent': 'Apifox/1.0.0 (https://apifox.com)', 
