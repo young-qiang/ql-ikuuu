@@ -46,7 +46,7 @@ axios(config)
     var {lastCheckinTime,checkin_last_time,lastCheckinMoney,checkin_days_count}=res
     var content=`签到时间：${checkin_last_time}，签到能量：${lastCheckinMoney}。累计签到：${checkin_days_count}天`
     
-  await notify.sendNotify(content)
+  await notify.sendNotify('Nodeloc 签到通知',content)
 
 })
 .catch(function (error) {
