@@ -1,6 +1,6 @@
 const axios =require("axios")
 const notify = require('./sendNotify')
-var data = '{"data":{"type":"users","attributes":{"allowCheckin":false,"checkin_days_count":3,"checkin_type":"R"},"id":"3732"}}';
+var data = '{"data":{"type":"users","attributes":{"allowCheckin":false,"checkin_days_count":3,"checkin_type":"R"},"id":"3735"}}';
 
 
 const checkinURL="https://www.nodeloc.com/api/users/3735";
